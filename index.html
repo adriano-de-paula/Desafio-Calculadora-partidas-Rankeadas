@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="src/js/script.js"></script>
+
+    <title>Calculadora de Partidas Rankeadas</title>
+</head>
+<body>
+    <main id="container">
+        <form id="form">
+            <div id="form-header">
+                <h1>Calculadora de Partidas Rankeadas</h1>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="name">
+                        Nome do Herói
+                        <div class="input-field">
+                            <i class="fa-solid fa-user-shield"></i>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label for="victories">
+                        Vitórias
+                        <div class="input-field">
+                            <i class="fa-solid fa-medal"></i>
+                            <input type="number" id="victories" name="victories">
+                        </div>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label for="loss">
+                        Derrotas
+                        <div class="input-field">
+                            <i class="fa-solid fa-skull-crossbones"></i>
+                            <input type="number" id="loss" name="loss">
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" id="rank-button">RANKEAR</button>
+
+            <div id="info" class="hidden">
+                <div id="result">
+                    <div id="description">
+                        <span id="value"></span>
+                    </div>
+                </div>
+            </div>
+        </form>       
+    </main>
+</body>
+</html>
