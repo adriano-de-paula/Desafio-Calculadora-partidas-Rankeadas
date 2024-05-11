@@ -74,3 +74,5 @@ document.getElementById('form').addEventListener('submit', function(event) {
     info.classList.remove('hidden');
 });
 ```
+## Resultado
+[Veja como ficou o código](https://adriano-de-paula.github.io/Desafio-Calculadora-partidas-Rankeadas/)
